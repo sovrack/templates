@@ -1,0 +1,46 @@
+{
+  "$schema": "https://sovrack.com/schemas/templates.json",
+  "version": "1.0.0",
+  "templates": [
+    {
+      "id": "nextjs",
+      "name": "Next.js 15 App Router",
+      "description": "Production-ready Next.js 15 with Standalone build and Tailwind CSS",
+      "framework": "Next.js",
+      "category": "Frontend",
+      "port": 3000,
+      "healthPath": "/api/health",
+      "minRamMb": 512
+    },
+    {
+      "id": "nodejs-express",
+      "name": "Node.js Express API",
+      "description": "Clean TypeScript REST API with Express and automated Nixpacks build",
+      "framework": "Express",
+      "category": "Backend",
+      "port": 4000,
+      "healthPath": "/health",
+      "minRamMb": 256
+    },
+    {
+      "id": "python-fastapi",
+      "name": "FastAPI Python",
+      "description": "High-performance asynchronous Python API with Uvicorn and OpenAPI docs",
+      "framework": "FastAPI",
+      "category": "Backend",
+      "port": 8000,
+      "healthPath": "/health",
+      "minRamMb": 256
+    },
+    {
+      "id": "golang",
+      "name": "Golang Web Service",
+      "description": "Zero-dependency lightweight Go microservice container",
+      "framework": "Go",
+      "category": "Backend",
+      "port": 8080,
+      "healthPath": "/healthz",
+      "minRamMb": 128
+    }
+  ]
+}
