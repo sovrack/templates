@@ -1,46 +1,138 @@
 {
   "$schema": "https://sovrack.com/schemas/templates.json",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "templates": [
+    {
+      "id": "postgres-pgadmin",
+      "name": "PostgreSQL 16 + pgAdmin",
+      "description": "Production PostgreSQL 16 database with auto-wired pgAdmin 4 web administration UI",
+      "framework": "PostgreSQL",
+      "category": "Database",
+      "port": 5432,
+      "healthPath": "/health",
+      "minRamMb": 256,
+      "icon": "database"
+    },
+    {
+      "id": "redis-insight",
+      "name": "Redis 7 + RedisInsight",
+      "description": "In-memory key-value cache and pub/sub broker with RedisInsight visual workbench",
+      "framework": "Redis",
+      "category": "Cache & Queue",
+      "port": 6379,
+      "healthPath": "/health",
+      "minRamMb": 128,
+      "icon": "zap"
+    },
+    {
+      "id": "mysql-phpmyadmin",
+      "name": "MySQL 8.0 + phpMyAdmin",
+      "description": "High-performance MySQL 8 relational database with phpMyAdmin web administration dashboard",
+      "framework": "MySQL",
+      "category": "Database",
+      "port": 3306,
+      "healthPath": "/health",
+      "minRamMb": 512,
+      "icon": "database"
+    },
+    {
+      "id": "mongodb-express",
+      "name": "MongoDB 7.0 + Mongo Express",
+      "description": "NoSQL document database paired with Mongo Express interactive web administrative client",
+      "framework": "MongoDB",
+      "category": "Database",
+      "port": 27017,
+      "healthPath": "/health",
+      "minRamMb": 512,
+      "icon": "database"
+    },
+    {
+      "id": "rabbitmq-management",
+      "name": "RabbitMQ Message Broker",
+      "description": "Enterprise AMQP message queue and pub/sub broker with integrated management interface",
+      "framework": "RabbitMQ",
+      "category": "Cache & Queue",
+      "port": 5672,
+      "healthPath": "/health",
+      "minRamMb": 256,
+      "icon": "layers"
+    },
+    {
+      "id": "minio",
+      "name": "MinIO Object Storage (S3-Compatible)",
+      "description": "High-performance, S3-compatible cloud object storage server with web browser console",
+      "framework": "MinIO",
+      "category": "Storage",
+      "port": 9000,
+      "healthPath": "/minio/health/live",
+      "minRamMb": 256,
+      "icon": "hard-drive"
+    },
+    {
+      "id": "uptime-kuma",
+      "name": "Uptime Kuma",
+      "description": "Self-hosted monitoring tool with status pages, ping checks, and multi-channel alerting",
+      "framework": "Uptime Kuma",
+      "category": "Monitoring",
+      "port": 3001,
+      "healthPath": "/",
+      "minRamMb": 128,
+      "icon": "activity"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n Workflow Automation",
+      "description": "Fair-code workflow automation tool allowing flexible connections between APIs and data stores",
+      "framework": "n8n",
+      "category": "Automation",
+      "port": 5678,
+      "healthPath": "/healthz",
+      "minRamMb": 512,
+      "icon": "workflow"
+    },
     {
       "id": "nextjs",
       "name": "Next.js 15 App Router",
-      "description": "Production-ready Next.js 15 with Standalone build and Tailwind CSS",
+      "description": "Production-ready Next.js 15 with Standalone build, Server Components and Tailwind CSS",
       "framework": "Next.js",
       "category": "Frontend",
       "port": 3000,
       "healthPath": "/api/health",
-      "minRamMb": 512
+      "minRamMb": 512,
+      "icon": "globe"
     },
     {
       "id": "nodejs-express",
       "name": "Node.js Express API",
-      "description": "Clean TypeScript REST API with Express and automated Nixpacks build",
+      "description": "Clean TypeScript REST API with Express and automated Nixpacks containerization",
       "framework": "Express",
       "category": "Backend",
       "port": 4000,
       "healthPath": "/health",
-      "minRamMb": 256
+      "minRamMb": 256,
+      "icon": "server"
     },
     {
       "id": "python-fastapi",
       "name": "FastAPI Python",
-      "description": "High-performance asynchronous Python API with Uvicorn and OpenAPI docs",
+      "description": "High-performance asynchronous Python API with Uvicorn and automatic OpenAPI Swagger docs",
       "framework": "FastAPI",
       "category": "Backend",
       "port": 8000,
       "healthPath": "/health",
-      "minRamMb": 256
+      "minRamMb": 256,
+      "icon": "server"
     },
     {
       "id": "golang",
       "name": "Golang Web Service",
-      "description": "Zero-dependency lightweight Go microservice container",
+      "description": "Zero-dependency lightweight Go microservice container built from scratch",
       "framework": "Go",
       "category": "Backend",
       "port": 8080,
       "healthPath": "/healthz",
-      "minRamMb": 128
+      "minRamMb": 128,
+      "icon": "cpu"
     }
   ]
 }
