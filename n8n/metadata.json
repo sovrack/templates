@@ -1,0 +1,10 @@
+{
+  "id": "n8n",
+  "name": "n8n Workflow Automation",
+  "category": "Automation",
+  "description": "Workflow automation tool allowing flexible connections between APIs and data stores",
+  "version": "1.0.0",
+  "port": 5678,
+  "icon": "workflow",
+  "composeFile": "docker-compose.yml"
+}

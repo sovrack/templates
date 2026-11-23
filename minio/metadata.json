@@ -1,0 +1,10 @@
+{
+  "id": "minio",
+  "name": "MinIO Object Storage (S3-Compatible)",
+  "category": "Storage",
+  "description": "High-performance S3-compatible cloud object storage server with web browser console",
+  "version": "1.0.0",
+  "port": 9000,
+  "icon": "hard-drive",
+  "composeFile": "docker-compose.yml"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "mysql-phpmyadmin",
+  "name": "MySQL 8.0 + phpMyAdmin",
+  "category": "Database",
+  "description": "MySQL 8 relational database with phpMyAdmin web administration dashboard",
+  "version": "1.0.0",
+  "port": 3306,
+  "icon": "database",
+  "composeFile": "docker-compose.yml"
+}

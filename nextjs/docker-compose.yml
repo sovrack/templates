@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  app:
+    image: node:22-alpine
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

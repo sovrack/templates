@@ -1,138 +1,115 @@
 {
   "$schema": "https://sovrack.com/schemas/templates.json",
-  "version": "1.1.0",
+  "version": "1.2.0",
+  "updatedAt": "2026-11-23T23:43:39.997Z",
   "templates": [
     {
       "id": "postgres-pgadmin",
-      "name": "PostgreSQL 16 + pgAdmin",
-      "description": "Production PostgreSQL 16 database with auto-wired pgAdmin 4 web administration UI",
-      "framework": "PostgreSQL",
+      "name": "PostgreSQL 16 + pgAdmin 4",
       "category": "Database",
+      "description": "Production PostgreSQL 16 database paired with pgAdmin 4 web administration dashboard",
       "port": 5432,
-      "healthPath": "/health",
-      "minRamMb": 256,
-      "icon": "database"
+      "icon": "database",
+      "path": "postgres-pgadmin/docker-compose.yml"
     },
     {
       "id": "redis-insight",
       "name": "Redis 7 + RedisInsight",
-      "description": "In-memory key-value cache and pub/sub broker with RedisInsight visual workbench",
-      "framework": "Redis",
       "category": "Cache & Queue",
+      "description": "In-memory key-value cache and pub/sub broker with RedisInsight visual workbench",
       "port": 6379,
-      "healthPath": "/health",
-      "minRamMb": 128,
-      "icon": "zap"
+      "icon": "zap",
+      "path": "redis-insight/docker-compose.yml"
     },
     {
       "id": "mysql-phpmyadmin",
       "name": "MySQL 8.0 + phpMyAdmin",
-      "description": "High-performance MySQL 8 relational database with phpMyAdmin web administration dashboard",
-      "framework": "MySQL",
       "category": "Database",
+      "description": "MySQL 8 relational database with phpMyAdmin web administration dashboard",
       "port": 3306,
-      "healthPath": "/health",
-      "minRamMb": 512,
-      "icon": "database"
+      "icon": "database",
+      "path": "mysql-phpmyadmin/docker-compose.yml"
     },
     {
       "id": "mongodb-express",
       "name": "MongoDB 7.0 + Mongo Express",
-      "description": "NoSQL document database paired with Mongo Express interactive web administrative client",
-      "framework": "MongoDB",
       "category": "Database",
+      "description": "NoSQL document database paired with Mongo Express interactive web administrative client",
       "port": 27017,
-      "healthPath": "/health",
-      "minRamMb": 512,
-      "icon": "database"
+      "icon": "database",
+      "path": "mongodb-express/docker-compose.yml"
     },
     {
       "id": "rabbitmq-management",
       "name": "RabbitMQ Message Broker",
-      "description": "Enterprise AMQP message queue and pub/sub broker with integrated management interface",
-      "framework": "RabbitMQ",
       "category": "Cache & Queue",
+      "description": "Enterprise AMQP message queue and pub/sub broker with integrated management interface",
       "port": 5672,
-      "healthPath": "/health",
-      "minRamMb": 256,
-      "icon": "layers"
+      "icon": "layers",
+      "path": "rabbitmq-management/docker-compose.yml"
     },
     {
       "id": "minio",
       "name": "MinIO Object Storage (S3-Compatible)",
-      "description": "High-performance, S3-compatible cloud object storage server with web browser console",
-      "framework": "MinIO",
       "category": "Storage",
+      "description": "High-performance S3-compatible cloud object storage server with web browser console",
       "port": 9000,
-      "healthPath": "/minio/health/live",
-      "minRamMb": 256,
-      "icon": "hard-drive"
+      "icon": "hard-drive",
+      "path": "minio/docker-compose.yml"
     },
     {
       "id": "uptime-kuma",
-      "name": "Uptime Kuma",
-      "description": "Self-hosted monitoring tool with status pages, ping checks, and multi-channel alerting",
-      "framework": "Uptime Kuma",
+      "name": "Uptime Kuma Monitoring",
       "category": "Monitoring",
+      "description": "Self-hosted monitoring tool with status pages, ping checks, and multi-channel alerting",
       "port": 3001,
-      "healthPath": "/",
-      "minRamMb": 128,
-      "icon": "activity"
+      "icon": "activity",
+      "path": "uptime-kuma/docker-compose.yml"
     },
     {
       "id": "n8n",
       "name": "n8n Workflow Automation",
-      "description": "Fair-code workflow automation tool allowing flexible connections between APIs and data stores",
-      "framework": "n8n",
       "category": "Automation",
+      "description": "Workflow automation tool allowing flexible connections between APIs and data stores",
       "port": 5678,
-      "healthPath": "/healthz",
-      "minRamMb": 512,
-      "icon": "workflow"
+      "icon": "workflow",
+      "path": "n8n/docker-compose.yml"
     },
     {
       "id": "nextjs",
       "name": "Next.js 15 App Router",
-      "description": "Production-ready Next.js 15 with Standalone build, Server Components and Tailwind CSS",
-      "framework": "Next.js",
       "category": "Frontend",
+      "description": "Next.js 15 App Router boilerplate with Tailwind CSS and Standalone output",
       "port": 3000,
-      "healthPath": "/api/health",
-      "minRamMb": 512,
-      "icon": "globe"
+      "icon": "globe",
+      "path": "nextjs/docker-compose.yml"
     },
     {
       "id": "nodejs-express",
       "name": "Node.js Express API",
-      "description": "Clean TypeScript REST API with Express and automated Nixpacks containerization",
-      "framework": "Express",
       "category": "Backend",
+      "description": "Lightweight Express.js REST API with health check endpoint and TypeScript",
       "port": 4000,
-      "healthPath": "/health",
-      "minRamMb": 256,
-      "icon": "server"
+      "icon": "server",
+      "path": "nodejs-express/docker-compose.yml"
     },
     {
       "id": "python-fastapi",
       "name": "FastAPI Python",
-      "description": "High-performance asynchronous Python API with Uvicorn and automatic OpenAPI Swagger docs",
-      "framework": "FastAPI",
       "category": "Backend",
+      "description": "Asynchronous Python API with Uvicorn and automatic OpenAPI Swagger docs",
       "port": 8000,
-      "healthPath": "/health",
-      "minRamMb": 256,
-      "icon": "server"
+      "icon": "server",
+      "path": "python-fastapi/docker-compose.yml"
     },
     {
       "id": "golang",
       "name": "Golang Web Service",
-      "description": "Zero-dependency lightweight Go microservice container built from scratch",
-      "framework": "Go",
       "category": "Backend",
+      "description": "Lightweight high-performance Go microservice container built from scratch",
       "port": 8080,
-      "healthPath": "/healthz",
-      "minRamMb": 128,
-      "icon": "cpu"
+      "icon": "cpu",
+      "path": "golang/docker-compose.yml"
     }
   ]
 }

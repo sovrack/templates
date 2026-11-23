@@ -1,0 +1,10 @@
+{
+  "id": "rabbitmq-management",
+  "name": "RabbitMQ Message Broker",
+  "category": "Cache & Queue",
+  "description": "Enterprise AMQP message queue and pub/sub broker with integrated management interface",
+  "version": "1.0.0",
+  "port": 5672,
+  "icon": "layers",
+  "composeFile": "docker-compose.yml"
+}

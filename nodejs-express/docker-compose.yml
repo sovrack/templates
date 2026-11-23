@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  api:
+    image: node:22-alpine
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+    ports:
+      - "${API_PORT:-4000}:4000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

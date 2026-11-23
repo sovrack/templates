@@ -1,0 +1,10 @@
+{
+  "id": "nodejs-express",
+  "name": "Node.js Express API",
+  "category": "Backend",
+  "description": "Lightweight Express.js REST API with health check endpoint and TypeScript",
+  "version": "1.0.0",
+  "port": 4000,
+  "icon": "server",
+  "composeFile": "docker-compose.yml"
+}

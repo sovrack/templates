@@ -1,0 +1,10 @@
+{
+  "id": "python-fastapi",
+  "name": "FastAPI Python",
+  "category": "Backend",
+  "description": "Asynchronous Python API with Uvicorn and automatic OpenAPI Swagger docs",
+  "version": "1.0.0",
+  "port": 8000,
+  "icon": "server",
+  "composeFile": "docker-compose.yml"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "redis-insight",
+  "name": "Redis 7 + RedisInsight",
+  "category": "Cache & Queue",
+  "description": "In-memory key-value cache and pub/sub broker with RedisInsight visual workbench",
+  "version": "1.0.0",
+  "port": 6379,
+  "icon": "zap",
+  "composeFile": "docker-compose.yml"
+}

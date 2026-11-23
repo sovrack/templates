@@ -1,0 +1,10 @@
+{
+  "id": "postgres-pgadmin",
+  "name": "PostgreSQL 16 + pgAdmin 4",
+  "category": "Database",
+  "description": "Production PostgreSQL 16 database paired with pgAdmin 4 web administration dashboard",
+  "version": "1.0.0",
+  "port": 5432,
+  "icon": "database",
+  "composeFile": "docker-compose.yml"
+}

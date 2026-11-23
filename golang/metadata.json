@@ -1,0 +1,10 @@
+{
+  "id": "golang",
+  "name": "Golang Web Service",
+  "category": "Backend",
+  "description": "Lightweight high-performance Go microservice container built from scratch",
+  "version": "1.0.0",
+  "port": 8080,
+  "icon": "cpu",
+  "composeFile": "docker-compose.yml"
+}
